@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI;
+    font-weight: 100;
+    scroll-behavior: smooth;
+}
+
+.Body {
+    background-image: url(../image/01.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    transition: 1s background-image;
+    width: 100%;
+    height: 100%;
+}
+
+.mask {
+    width: 100%;
+    height: 150%;
+    background-color: #95959587;
+}
+
+.top {
+    width: 100%;
+    text-align: center;
+}
+
+.top img {
+    width: 170px;
+    height: 170px;
+}
+
+.top p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.top button {
+    background-color: #4A99E1;
+    color: white;
+    font-size: 20px;
+    width: 177px;
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    outline: none;
+    transition: .5s all;
+    cursor: pointer;
+}
+
+.top button:hover {
+    transition: .5s all;
+    background: none;
+    border: 1px solid #4A99E1;
+}
+
+
+/* start slids */
+
+.slider {
+    width: 80%;
+    height: 500px;
+    background-color: #f7f6f9ad;
+    box-shadow: 0px 0px 12px #000000c4;
+    margin: 25px 10% 25px 10%;
+    position: relative;
+}
+
+#container {
+    overflow: hidden;
+    /*anything bigger than container is not seek*/
+    width: 100%;
+    height: 100%;
+}
+
+#slide-track {
+    transition: left 500ms ease-in;
+    left: -0%;
+    width: 300%;
+    /*width for 3 slids*/
+    position: relative;
+    /*moves relative to where it normally sits*/
+    padding-top: 100%;
+    /*height is proportional ratio to width*/
+}
+
+.slide {
+    width: 33.33%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#slide1 {
+    left: 0%;
+    background-size: cover;
+}
+
+#slide2 {
+    left: 33.33%;
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/544993/profile/profile-80_1.jpg");
+    background-size: cover;
+}
+
+#slide3 {
+    left: 66.66%;
+}
+
+#slide4 {
+    left: 99.99%;
+}
+
+#outer-container {
+    position: relative;
+}
+
+.nav {
+    position: absolute;
+    top: 45%;
+}
+
+.prev {
+    left: -80px;
+}
+
+.next {
+    right: -80px;
+}
+
+.slider button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: .5s all;
+    outline: none;
+}
+
+.slider button:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.slide div {
+    width: 40%;
+    height: 100%;
+    float: right;
+}
+
+.slide div img {
+    float: right;
+}
+
+.slide .content {
+    width: 60%;
+    height: 100%;
+    padding: 50px;
+    padding-left: 0;
+}
+
+.slide .content OL {
+    list-style: none;
+    width: 150%;
+}
+
+.slide .content OL li {
+    margin: 40px;
+    margin-left: 30;
+    font-size: 21px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.slide .content OL li input {
+    width: 60px;
+    height: 30px;
+    padding: 0;
+    margin-left: 5px;
+    border: none;
+    transition: .5s all;
+    cursor: pointer;
+    color: #4A99E1;
+    border: 1px solid #4A99E1;
+    border-radius: 5px;
+}
+
+.slide .content OL li .testCls {
+    width: 400px;
+    height: 35px;
+    border: none;
+    transition: .5s all;
+    background-color: #4A99E1;
+    color: white;
+}
+
+.slide .content OL li .testCls:hover {
+    transition: .5s all;
+    transform: scale(1.1, 1.1);
+}
+
+.slide p {
+    width: 50px;
+    height: 40px;
+    background-color: #95959587;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}

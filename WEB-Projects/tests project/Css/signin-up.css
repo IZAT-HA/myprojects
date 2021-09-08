@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI;
+}
+
+.continar {
+    width: 450px;
+    height: 600px;
+    box-shadow: 0px 3px 10px #00000040;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-x: hidden;
+    transition: .5S ALL;
+}
+
+.continar:hover {
+    transition: .5s all;
+    box-shadow: 0px 3px 10px #385CE4;
+}
+
+.continar .svg .svgi {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 192px;
+    animation: svg 10s infinite linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes svg {
+    0% {
+        height: 200px;
+        width: 110%;
+    }
+    10% {
+        height: 210px;
+        width: 120%;
+    }
+    20% {
+        height: 220px;
+        width: 130%;
+    }
+    30% {
+        height: 230px;
+        width: 120%;
+    }
+    40% {
+        height: 240px;
+        width: 130%;
+    }
+    50% {
+        height: 250px;
+        width: 140%;
+    }
+    60% {
+        height: 240px;
+        width: 150%;
+    }
+    70% {
+        height: 230px;
+        width: 140%;
+    }
+    80% {
+        height: 220px;
+        width: 130%;
+    }
+    90% {
+        height: 210px;
+        width: 120%;
+    }
+    100% {
+        height: 192px;
+        width: 100%;
+    }
+}
+
+.continar h2,
+h4 {
+    text-align: center;
+}
+
+.continar h2 {
+    padding-top: 60px;
+    margin-bottom: 10px;
+    color: #385CE4;
+    font-size: 30px;
+}
+
+.continar h4 {
+    color: #959595;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+
+.continar .box {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.continar .box input,
+button {
+    width: 80%;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    transition: .5S all;
+    outline: none;
+}
+
+.continar .box input:focus {
+    transition: .5s all;
+    border: 1px solid #385CE4;
+}
+
+.continar .box input {
+    padding: 15px 0 15px 30px;
+    font-size: 17px;
+    border: 1px solid #959595a6;
+    border-radius: 5px;
+}
+
+.continar .box .signin {
+    border-radius: 5px;
+    background-color: #385CE4;
+    border: none;
+    font-size: 17px;
+    color: white;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: .5s all;
+    border: 1px solid transparent;
+}
+
+.continar .box .signin:hover {
+    transition: .5s all;
+    border-color: #385CE4;
+    background-color: white;
+    color: #385CE4;
+}
+
+.continar .box div {
+    width: 80%;
+    margin-left: 10%;
+    height: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.continar .box div button {
+    padding-left: 30px;
+    color: #1100FB;
+    font-size: 17px;
+    background: none;
+    border: none;
+    text-align: left;
+    width: 50px;
+    padding: 0;
+    height: 20px;
+    cursor: pointer;
+    transition: .5s all;
+    z-index: 1;
+}
+
+.continar #signupid {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #fff;
+    transition: .5s all;
+    top: 0;
+    left: -100%;
+    z-index: -1;
+}
+
+.continar .svg .svgu {
+    width: 153%;
+    transform: rotate( 180deg)translateX(120px)rotatey( 131deg);
+    height: 430px;
+}
+
+.continar .box2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+}
+
+.continar .signup h2 {
+    color: white;
+    padding-top: 10px;
+}
+
+.continar .signup h4 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.continar .signup .boxinput {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.continar .signup .boxinput input {
+    width: 80%;
+    height: 50px;
+    padding: 15px 0 15px 30px;
+    font-size: 17px;
+    border: 1px solid #959595a6;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 5px;
+    transition: .5s all
+}
+
+.continar .signup .boxinput input:focus {
+    border: 1px solid #385CE4;
+}
+
+.continar .signup .boxinput .name {
+    margin-top: 25px;
+    width: 40%;
+    height: 50px;
+    padding: 15px 0 15px 30px;
+    font-size: 17px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+}
+
+.continar .signup .boxinput button {
+    width: 80%;
+    margin-left: 0%;
+    background-color: #385CE4;
+    outline: none;
+    border: 1px solid transparent;
+    transition: .56s all;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+.continar .signup .boxinput button:hover {
+    transition: .5s all;
+    border-color: #385CE4;
+    background-color: white;
+    color: #385CE4;
+}
+
+.continar .signup .boxinput .signinbtn {
+    width: 40px;
+    height: 20px;
+    color: #385CE4;
+    background: none;
+    border: none;
+    display: inline-block;
+}
+
+.continar .signup .boxinput div {
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+}
+
+.continar .signup .boxinput div span {
+    font-size: 15px;
+    color: #959595;
+}
